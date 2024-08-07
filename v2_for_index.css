@@ -1,0 +1,119 @@
+/* Загальні стіилі -------------------------------------------------- */
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Блок №1 ------------------------------------------------------------ */
+.stripe-1 {
+    background-color: #100C35;
+    width: 100%;
+    padding: 10px;
+}
+
+.container {
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.block-1 {
+    margin-top: 50px;
+
+}
+.block-1 h1 {
+    font-size: 3em;
+}
+.block-1 p {
+    color: #9FD4FF;
+    font-size: 2em;
+}
+.block-1 .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.block-1 .button {
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: 900;
+    border: none;
+    cursor: pointer;
+}
+.block-1 .button-order {
+    background: linear-gradient(135deg, #FB355D, #FE6460);
+    color: black;
+}
+.block-1 .button-more {
+    background-color: #100C35;
+    color: #FB3B5D;
+    border: 2px solid #FB3B5D;
+}
+.image-block {
+    margin-top: 20px;
+    background: linear-gradient(135deg, #222222, #596B7B);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* height: 100%; */
+}
+.image-block img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Адаптивна для Блок №1 ---------------------------------------------------------------------- */
+@media (min-width: 1200px) {
+    .container {
+        flex-direction: row;
+        width: 1200px;
+        gap: 50px;
+    }
+    .block-1 .buttons {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .image-block {
+        margin-top: 20px;
+        background: linear-gradient(135deg, #222222, #596B7B);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 70px;
+    }
+}
+
+@media (min-width: 760px) and (max-width: 1199px) { 
+    .container {
+        flex-direction: row;
+        width: 760px;
+        gap: 50px;
+    }
+    .block-1 .buttons {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .image-block {
+        margin-top: 20px;
+        background: linear-gradient(135deg, #222222, #596B7B);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 20px;
+    }
+    .image-block img {
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+    }
+}
