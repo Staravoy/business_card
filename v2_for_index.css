@@ -3,14 +3,6 @@ body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
-
-/* Блок №1 ------------------------------------------------------------ */
-.stripe-1 {
-    background-color: #100C35;
-    width: 100%;
-    padding: 10px;
-}
-
 .container {
     width: 480px;
     display: flex;
@@ -20,9 +12,30 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+/* adapt for container */
+@media (min-width: 760px) and (max-width: 1199px) { 
+
+    .container {
+        flex-direction: row;
+        width: 760px;
+        gap: 30px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        flex-direction: row;
+        width: 1200px;
+        gap: 50px;
+    }
+}
+/* block-1 ------------------------------------------------------------ */
+.stripe-1 {
+    background-color: #100C35;
+    width: 100%;
+    padding: 10px;
+}
 .block-1 {
     margin-top: 50px;
-
 }
 .block-1 h1 {
     font-size: 3em;
@@ -67,53 +80,146 @@ body {
     height: 300px;
     object-fit: cover;
 }
-
-/* Адаптивна для Блок №1 ---------------------------------------------------------------------- */
+/* adapt for block-1 */
+@media (min-width: 760px) and (max-width: 1199px) { 
+        .block-1 .buttons {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+        .image-block {
+            margin-top: 20px;
+            background: linear-gradient(135deg, #222222, #596B7B);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 20px;
+        }
+        .image-block img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+        }
+}
 @media (min-width: 1200px) {
-    .container {
-        flex-direction: row;
-        width: 1200px;
-        gap: 50px;
-    }
-    .block-1 .buttons {
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
+        .block-1 {
+            margin-left: 40px;
+        }   
+        .block-1 .buttons {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+        .image-block {
+            margin-top: 20px;
+            background: linear-gradient(135deg, #222222, #596B7B);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 70px;
+        }
     }
 
-    .image-block {
-        margin-top: 20px;
-        background: linear-gradient(135deg, #222222, #596B7B);
+/* block-2 ------------------------------------------------------------------------------------ */
+.stripe-2 {
+    background: #261C4E;
+    width: 100%;
+    padding: 10px;
+}
+.block-2 {
+    background: #100C35;
+    padding: 10px;
+}
+.block-2 .title {
+    font-weight: bold;
+}
+.block-2 .contact_info {
+    font-size: larger;
+    margin-left: 10px;
+}
+/* adapt for block-2 */
+@media (min-width: 760px) and (max-width: 1199px) { 
+   .block-2 {
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+    .block-2 .columns {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 50px 70px;
+        justify-content: space-between;
+        padding: 0 40px;
+    }
+    .block-2 .contact_info {
+        margin-left: 0;
+    }
+}
+@media (min-width: 1200px) {
+    .block-2 {
+        width: 100%;
+        margin: 0 auto;
+        padding: 40px;
+    }
+    .block-2 .columns {
+        display: flex;
+        gap: 200px;
+
+    }
+    .block-2 .contact_info {
+        margin-left: 0;
     }
 }
 
-@media (min-width: 760px) and (max-width: 1199px) { 
-    .container {
-        flex-direction: row;
-        width: 760px;
-        gap: 50px;
-    }
-    .block-1 .buttons {
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
-    }
+/* block-3 ------------------------------------------------------------------------------------ */
+.block-3 {
+    padding: 0 10px;
+}
+.block-3 h2 {
+    color: white;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.block-3 .skills {
+    /* display: flex; Додайте цей рядок, якщо його ще немає */
+    justify-content: space-around;
+}
+.block-3 .skill {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+.block-3 .skill-number {
+    background-color: #261C4E;
+    color: white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    font-weight: bold;
+}
+.block-3 .skill-text {
+    display: flex;
+    flex-direction: column;
+}
+.block-3 .skill-text p {
+    margin-left: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #9FD4FF;
+}
+.block-3 .text {
+    margin-top: 5px;
+    white-space: normal;
+}
+.block-3 .skill-text .title {
+    color: white;
+}
 
-    .image-block {
-        margin-top: 20px;
-        background: linear-gradient(135deg, #222222, #596B7B);
+/* adapt fro block-3 */
+@media (min-width: 760px) and (max-width: 1199px) {
+    .block-3 .skills {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 20px 20px;
-    }
-    .image-block img {
-        width: 300px;
-        height: 200px;
-        object-fit: cover;
+       justify-content: space-between;
     }
 }
