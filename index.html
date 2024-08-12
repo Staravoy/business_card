@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сайт-візитка</title>
-    <!-- <link rel="stylesheet" href="for_index.css"> -->
      <link rel="stylesheet" href="v2_for_index.css">
      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;700&display=swap">
+    <!-- animation sunrice -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 <!-- Block_1 ------------------------------------------------------------------------------- -->
     <div class="stripe-1">
         <div class="container">
-            <div class="block-1">
+            <div class="block-1" data-aos="fade-up">
                 <h1>Професіонал у сфері IT</h1>
                 <p>Висококваліфікований фахівець з програмування, що пропонує якісні рішення для Вашого бізнесу.</p>
                 <div class="buttons">
@@ -28,7 +29,7 @@
 <!-- Block_2 ------------------------------------------------------------------------------- -->
 <div class="stripe-2">
     <div class="container">
-        <div class="block-2">
+        <div class="block-2" data-aos="fade-up">
             <h2>Представляюся</h2>
             <div class="columns">
                 <div class="column">
@@ -37,6 +38,7 @@
                 </div>
                 <div class="column">
                     <img src="./img/my_photo.jpeg" alt="photo_Vyacheslav" class="photo_Vyacheslav">
+                    <!-- <img src="#" alt="photo_Vyacheslav" class="photo_Vyacheslav"> -->
                 </div>
                 <div class="column">
                     <p class="title">Контакти:</p>
@@ -51,7 +53,7 @@
 <!-- Block_3 ------------------------------------------------------------------------------- -->
 <div class="stripe-1">
     <div class="container">
-        <div class="block-3">
+        <div class="block-3" data-aos="fade-up">
             <h2>Мої навички</h2>
             <div class="skills">
                 <div class="skill">
@@ -87,7 +89,7 @@
 <!-- Block_4 ------------------------------------------------------------------------------- -->
     <div class="stripe-2">
         <div class="container">
-            <div class="block-4">
+            <div class="block-4" data-aos="fade-up">
                 <div class="background-image-container">
                     <div class="overlay"></div>
                     <img src="./img/gold_ground.png" alt="Підкладка" class="background-image">
@@ -140,7 +142,7 @@
 <!-- Block_5 ----------------------------------------------------------------------------------------------------- -->
 <div class="stripe-1">
     <div class="container">
-        <div class="block-5">
+        <div class="block-5" data-aos="fade-up">
             <h2>Додаткові можливості</h2>
             <div class="offers">
                 <div class="offer-1">
@@ -174,8 +176,15 @@
             </div>
         </div>
     </div>
+<!-- modal for order -------------------------------------------------------------- -->
 
+</div> 
 
-</div>  
+<!-- animation sunrice -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
 </body>
 </html>

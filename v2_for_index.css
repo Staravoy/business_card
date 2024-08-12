@@ -136,9 +136,9 @@ body {
     font-size: larger;
     margin-left: 10px;
 }
-.photo_Vyacheslav {
-    width: 200px;
-    height: 250px;
+.block-2 .photo_Vyacheslav {
+    width: 260px;
+    height: 340px;
 }
 /* adapt for Block-2 */
 @media (min-width: 760px) and (max-width: 1199px) { 
