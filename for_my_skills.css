@@ -1,0 +1,164 @@
+/* Загальні стилі */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #100C35;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h2 {
+    color: #FB3B5D;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Стилі для секцій */
+section {
+    padding: 50px 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    background-color: #261C4E;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Освіта */
+.education-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Certificate --------------------------------------------- */
+.slider {
+    position: relative;
+    width: 80%;
+    max-width: 450px;
+    height: 650px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 10px;
+}
+
+.controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.controls button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.controls button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+/* Кваліфікації та вміння */
+.skills {
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr; */
+    /* gap: 20px; */
+    text-align: center;
+}
+
+.skill-item {
+    background-color: #100C35;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5px;
+}
+
+.skill-item i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #FB3B5D;
+}
+
+/* Досвід та проекти */
+.experience p {
+    margin-bottom: 10px;
+}
+
+/* Кнопки */
+.actions {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.actions button {
+    background-color: #FB3B5D;
+    color: #100C35;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.actions button:hover {
+    background-color: #ff6678;
+}
+
+/* Адаптивний дизайн */
+@media (max-width: 768px) {
+    .skills {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 30px 10px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .actions button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}

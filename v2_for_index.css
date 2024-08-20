@@ -64,6 +64,8 @@ body {
     background-color: #100C35;
     color: #FB3B5D;
     border: 2px solid #FB3B5D;
+    text-decoration: none;
+    text-align: center;
 }
 .image-block {
     margin-top: 20px;
@@ -99,6 +101,9 @@ body {
             height: 200px;
             object-fit: cover;
         }
+        .block-1 .button-more {
+            text-decoration: none;
+        }
 }
 @media (min-width: 1200px) {
         .block-1 {
@@ -116,6 +121,9 @@ body {
             justify-content: center;
             align-items: center;
             padding: 50px 70px;
+        }
+        .block-1 .button-more {
+            text-decoration: none;
         }
     }
 
