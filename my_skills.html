@@ -5,16 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Детальний досвід</title>
-    <link rel="stylesheet" href="./for_my_skills.css">
+    <!-- загальні стилі для сторінки -->
+    <link rel="stylesheet" href="./css/for_my_skills.css">
+    <!-- стилі для модального вікна -->
+    <link rel="stylesheet" href="./css/modalka.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- animation sunrice -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
 <!-- освіта та сертифікат ----------------------------------------------------------- -->
-    <section class="education aos-init" data-aos="fade-up">
+    <section class="education aos-init">
         <h2>Освіта</h2>
         <p>Курси: Закінчив курси FullStack розробника в GoIT</p>
-            <div class="slider">
+            <div class="slider" data-aos="fade-up">
                 <div class="slides">
                     <div class="slide">
                         <img src="./img/Головна сторінка.png" alt="Зображення 1">
@@ -82,8 +87,8 @@
         <!-- Опис проектів -->
     </section>
 
-    <section class="actions">
-        <button onclick="location.href='order.html'">Замовити</button>
+    <section class="actions" data-aos="fade-up">
+        <button id="openModalBtn">Замовити</button>
         <button onclick="location.href='index.html'">Повернутись на головну</button>
     </section>
 
@@ -92,6 +97,39 @@
         AOS.init();
     </script>
 <script src="./js/script_for_slaider.js"></script>
+<!-- animation sunrice  ---------------------------------------------------------------->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<!-- Модальне вікно ---------------------------------------------------------------- -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Заповніть форму</h2>
+        <form id="contactForm">
+            <label for="firstName">Ім'я:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Прізвище:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="phone">Номер телефону:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="email">Емайл:</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit" class="submitBtn">Відправити</button>
+        </form>
+        <p id="thankYouMessage" style="display: none;">Дякую! Пропозиція прийнята! Я з Вами зв'яжусь у найкоротший
+            термін.</p>
+    </div>
+</div>
+<!-- script for modalka -->
+<script src="./js/modalka.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+
 </body>
 
 </html>

@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сайт-візитка</title>
-     <link rel="stylesheet" href="v2_for_index.css">
+    <!-- загальні стилі сторінки -->
+     <link rel="stylesheet" href="./css/v2_for_index.css">
+     <!-- стилі для модального вікна -->
+      <link rel="stylesheet" href="./css/modalka.css">
      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;700&display=swap">
     <!-- animation sunrice -->
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
@@ -17,7 +20,7 @@
                 <h1>Професіонал у сфері IT</h1>
                 <p>Висококваліфікований фахівець з програмування, що пропонує якісні рішення для Вашого бізнесу.</p>
                 <div class="buttons">
-                    <button class="button button-order">Замовити</button>
+                    <button class="button button-order" id="openModalBtn">Замовити</button>
                     <a href="./my_skills.html" class="button button-more">Дізнатись більше</a>
                 </div>
             </div>
@@ -180,7 +183,35 @@
 
 </div> 
 
-<!-- animation sunrice -->
+<!-- Модальне вікно ---------------------------------------------------------------- -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Заповніть форму</h2>
+            <form id="contactForm">
+                <label for="firstName">Ім'я:</label>
+                <input type="text" id="firstName" name="firstName" required>
+    
+                <label for="lastName">Прізвище:</label>
+                <input type="text" id="lastName" name="lastName" required>
+    
+                <label for="phone">Номер телефону:</label>
+                <input type="tel" id="phone" name="phone" required>
+    
+                <label for="email">Емайл:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <button type="submit" class="submitBtn">Відправити</button>
+            </form>
+            <p id="thankYouMessage" style="display: none;">Дякую! Пропозиція прийнята! Я з Вами зв'яжусь у найкоротший
+                термін.</p>
+        </div>
+    </div>
+    <!-- script for modalka -->
+    <script src="./js/modalka.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+
+<!-- animation sunrice  ---------------------------------------------------------------->
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script>
     AOS.init();
