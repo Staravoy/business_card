@@ -57,13 +57,17 @@ body {
     cursor: pointer;
 }
 .block-1 .button-order {
-    background: linear-gradient(135deg, #FB355D, #FE6460);
-    color: black;
+    background-color: #100C35;
+    border: 2px solid #FB3B5D;
+    /* color: white; */
+    color: #FB3B5D;
+    border-radius: 8px;
 }
 .block-1 .button-more {
     background-color: #100C35;
     color: #FB3B5D;
     border: 2px solid #FB3B5D;
+    border-radius: 8px;
     text-decoration: none;
     text-align: center;
 }
