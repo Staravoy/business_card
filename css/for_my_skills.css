@@ -143,6 +143,18 @@ section {
     background-color: #ff6678;
 }
 
+.titleMyApp {
+    text-decoration: underline;
+}
+
+.goToGithub {
+    color: #FB3B5D;
+}
+
+.goToGithub:hover{
+    color: #ff6678;
+}
+
 /* Адаптивний дизайн */
 @media (max-width: 768px) {
     .skills {
