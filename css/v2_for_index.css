@@ -336,6 +336,20 @@ body {
     color: #9FD4FF;
 }
 
+.language-flags {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.language-flags .flag {
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+}
+
 @media (min-width:768px) and (max-width: 1199px) {
     .block-4 {
         display: flex;
